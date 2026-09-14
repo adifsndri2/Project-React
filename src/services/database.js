@@ -2,7 +2,7 @@ import { supabase, isSupabaseConfigured } from '../lib/supabase'
 
 function requireSupabase() {
   if (!isSupabaseConfigured || !supabase) {
-    throw new Error('Supabase belum dikonfigurasi. Tambahkan VITE_SUPABASE_URL dan VITE_SUPABASE_ANON_KEY.')
+    throw new Error('Supabase belum dikonfigurasi. Tambahkan VITE_SUPABASE_URL dan VITE_SUPABASE_PUBLISHABLE_KEY.')
   }
   return supabase
 }
